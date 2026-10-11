@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BD Travels</title>
+    <link rel="shortcut icon" href="images/bus-logo.png" type="image/x-icon">
 
     <!-- tailwind & daisyUI -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.4/dist/full.css" rel="stylesheet" type="text/css" />
@@ -33,8 +34,10 @@
                         'btn-bg-color': 'rgba(29, 209, 0, 0.1)',
                         'card1-bg-color': '#FFBF0F',
                         'card2-bg-color': '#F78C9C',
-
-
+                        'card-bg-color3': '#F7F8F8',
+                        'paribahan-bg-color': '#F7F8F8',
+                        'quantity-bg-color': 'rgba(29, 209, 0, 0.15)',
+                        'checkpoint-bg-color': 'rgba(3, 7, 18, 0.05)',
                     }
                 }
             }
@@ -58,70 +61,85 @@
                         </label>
                         <ul tabindex="0"
                             class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-heading-color7 font-bold text-lg">
-                        <li ><a>Home</a></li>
-                        <li><a>About</a></li>
-                        <li><a>Destination</a></li>
-                        <li><a>Search</a></li>
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Destination</a></li>
+                            <li><a>Search</a></li>
                         </ul>
                     </div>
-                    <a class="btn btn-ghost normal-case font-extrabold text-heading-color1 text-3xl px-0 cursor-pointer hover:bg-white">
-                    <span class="text-green-color" >BD</span>Travels
-                </a>
+                    <a
+                        class="btn btn-ghost normal-case font-extrabold text-heading-color1 text-3xl px-0 cursor-pointer hover:bg-white">
+                        <span class="text-green-color">BD</span>Travels
+                    </a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1 text-heading-color7 font-bold text-sm">
-                        <li ><a>Home</a></li>
+                        <li><a>Home</a></li>
                         <li><a>About</a></li>
                         <li><a>Destination</a></li>
                         <li><a>Search</a></li>
                     </ul>
                 </div>
                 <div class="navbar-end flex justify-end mr-3 md:mx-auto">
-                    <a class="btn border-btn-border-color text-xl font-bold bg-btn-bg-color text-green-color normal-case">Bus
+                    <a
+                        class="btn border-btn-border-color text-xl font-bold bg-btn-bg-color text-green-color normal-case">Bus
                         <img src="images/bus-icon.png" alt="" class="text-sm">
                     </a>
                 </div>
             </div>
         </nav>
         <section class="hero-section mx-auto custom-container p-4">
-            <div class="bg-hero text-center md:h-[550px] w-full bg-no-repeat bg-cover bg-center rounded-3xl mx-auto md:relative">
+            <div
+                class="bg-hero text-center md:h-[550px] w-full bg-no-repeat bg-cover bg-center rounded-3xl mx-auto md:relative">
                 <div class="px-4 py-14 md:pt-16 md:px-8 text-white md:mb-10 mb-0">
-                    <h1 class="mx-auto font-raleway text-4xl md:text-6xl font-extrabold md:leading-[70px] mb-6 md:mb-4 max-w-2xl">End-to-End Travel with
-                <span class="text-green-color">BD Travels</span></h1>
-                <p class="font-inter md:text-lg mb-16 md:mb-10 md:max-w-2xl mx-auto">Yes, you can easily book bus tickets, check seat availability, and manage your trips directly within the app. The integrated platform features secure payment options and instant confirmation, allowing for a completely streamlined travel experience from start to finish</p>
-                <button class="normal-case font-raleway border-none text-sm font-bold btn bg-green-color text-heading-color1">Buy Tickets</button>
-            </div>
+                    <h1
+                        class="mx-auto font-raleway text-4xl md:text-6xl font-extrabold md:leading-[70px] mb-6 md:mb-4 max-w-2xl">
+                        End-to-End Travel with
+                        <span class="text-green-color">BD Travels</span>
+                    </h1>
+                    <p class="font-inter md:text-lg mb-16 md:mb-10 md:max-w-2xl mx-auto">Yes, you can easily book bus
+                        tickets, check seat availability, and manage your trips directly within the app. The integrated
+                        platform features secure payment options and instant confirmation, allowing for a completely
+                        streamlined travel experience from start to finish</p>
+                    <button
+                        class="normal-case font-raleway border-none text-sm font-bold btn bg-green-color text-heading-color1">Buy
+                        Tickets</button>
+                </div>
             </div>
             <!-- card container -->
-                <div class="font-inter flex flex-col md:flex-row  justify-center gap-6 static md:relative md:bottom-16 md:px-20">
-                    <!-- card 1  -->    
-                    <div class="flex justify-around gap-4 items-center text-left bg-white rounded-3xl border-b-4 border-green-color p-8 w-full min-w-80">
-                        <img src="images/people.png" alt="people">
-                        <div class="mr-4 ">
-                            <h3 class="text-4xl font-bold mb-2 text-heading-color1">500K+</h3>
-                            <p class="text-lg text-heading-color6 w-full">Registered users</p>
-                        </div>
+            <div
+                class="font-inter flex flex-col md:flex-row  justify-center gap-6 static md:relative md:bottom-16 md:px-20">
+                <!-- card 1  -->
+                <div
+                    class="flex justify-around gap-4 items-center text-left bg-white rounded-3xl border-b-4 border-green-color p-8 w-full min-w-80">
+                    <img src="images/people.png" alt="people">
+                    <div class="mr-4 ">
+                        <h3 class="text-4xl font-bold mb-2 text-heading-color1">500K+</h3>
+                        <p class="text-lg text-heading-color6 w-full">Registered users</p>
                     </div>
-                    <!-- card 2  -->
-                    <div class="flex justify-around gap-4 items-center text-left bg-white rounded-3xl border-b-4 border-green-color p-8 w-full min-w-80">
-                        <img src="images/ticket-cupon.png" alt="ticket-coupon">
-                        <div class="mr-4 ">
-                            <h3 class="text-4xl font-bold mb-2 text-heading-color1">1.7 lacks</h3>
-                            <p class="text-lg text-heading-color6">Tickets sold</p>
-                        </div>
-                    </div>
-                    <!-- card 3  -->
-                    <div class="flex justify-around gap-4 items-center text-left bg-white rounded-3xl border-b-4 border-green-color p-8 w-full min-w-80">
-                        <img src="images/stoppage.png" alt="stoppage">
-                        <div class="mr-4 ">
-                            <h3 class="text-4xl font-bold mb-2 text-heading-color1">80K+</h3>
-                            <p class="text-lg text-heading-color6">Rental partners</p>
-                        </div>
-                    </div>
-                    
-
                 </div>
-                
+                <!-- card 2  -->
+                <div
+                    class="flex justify-around gap-4 items-center text-left bg-white rounded-3xl border-b-4 border-green-color p-8 w-full min-w-80">
+                    <img src="images/ticket-cupon.png" alt="ticket-coupon">
+                    <div class="mr-4 ">
+                        <h3 class="text-4xl font-bold mb-2 text-heading-color1">1.7 lacks</h3>
+                        <p class="text-lg text-heading-color6">Tickets sold</p>
+                    </div>
+                </div>
+                <!-- card 3  -->
+                <div
+                    class="flex justify-around gap-4 items-center text-left bg-white rounded-3xl border-b-4 border-green-color p-8 w-full min-w-80">
+                    <img src="images/stoppage.png" alt="stoppage">
+                    <div class="mr-4 ">
+                        <h3 class="text-4xl font-bold mb-2 text-heading-color1">80K+</h3>
+                        <p class="text-lg text-heading-color6">Rental partners</p>
+                    </div>
+                </div>
+
+
+            </div>
+
         </section>
     </header>
 
@@ -132,43 +150,125 @@
             <!-- card container -->
             <div class="flex flex-col md:flex-row gap-6 justify-center  mb-16 ">
                 <!-- card1 -->
-                 <div class="flex bg-card1-bg-color items-center rounded-3xl">
+                <div class="flex bg-card1-bg-color items-center rounded-3xl">
                     <!-- part1 -->
-                     <div class="font-inter md:space-y-2 p-4 md:p-12 text-left ml-0">
+                    <div class="font-inter md:space-y-2 p-4 md:p-12 text-left ml-0">
                         <h4 class="text-2xl md:text-4xl text-heading-color8 font-black">15% OFF</h4>
                         <p class="text-heading-color8 font-semibold md:text-xl">on your next purchase</p>
                         <p class="text-sm description-color5 md:text-lg">use by January 2026</p>
-                     </div>
-                     <!-- part2 -->
-                      <div >
-                     <img src="images/cupon-devider.png" alt="">
-                      </div>
-                     <!-- part3 -->
-                      <div class="font-raleway space-y-2 md:pl-4 md:pr-12 md:py-12 text-center pr-8">
-                         <h4 class="text-xl uppercase text-heading-color1 font-bold md:text-3xl">NeW15</h4>
-                         <p class="text-sm font-medium md:text-xl description-color4">Coupon Code</p>
-                      </div>
-                 </div>
+                    </div>
+                    <!-- part2 -->
+                    <div>
+                        <img src="images/cupon-devider.png" alt="">
+                    </div>
+                    <!-- part3 -->
+                    <div class="font-raleway space-y-2 md:pl-4 md:pr-12 md:py-12 text-center pr-8">
+                        <h4 class="text-xl uppercase text-heading-color1 font-bold md:text-3xl">NeW15</h4>
+                        <p class="text-sm font-medium md:text-xl description-color4">Coupon Code</p>
+                    </div>
+                </div>
                 <!-- card2 -->
-                 <div class="flex bg-card2-bg-color items-center rounded-3xl ">
+                <div class="flex bg-card2-bg-color items-center rounded-3xl ">
                     <!-- part1 -->
-                     <div class="font-inter md:space-y-2 p-4 md:p-12 text-left">
+                    <div class="font-inter md:space-y-2 p-4 md:p-12 text-left">
                         <h4 class="text-2xl md:text-4xl text-heading-color8 font-black">20% OFF</h4>
                         <p class="text-heading-color8 font-semibold md:text-xl">on your next purchase</p>
                         <p class="text-sm description-color5 md:text-lg">use by January 2026</p>
-                     </div>
-                     <!-- part2 -->
-                      <div>
-                     <img src="images/cupon-devider.png" alt="">
-                      </div>
-                     <!-- part3 -->
-                      <div class="font-raleway space-y-2 md:pl-4 md:pr-12 md:py-12 text-center pl-3 pr-8">
-                         <h4 class="text-xl  text-heading-color1 font-bold md:text-3xl">Couple 20</h4>
-                         <p class="text-sm font-medium md:text-xl description-color4">Coupon Code</p>
-                      </div>
                     </div>
+                    <!-- part2 -->
+                    <div>
+                        <img src="images/cupon-devider.png" alt="">
+                    </div>
+                    <!-- part3 -->
+                    <div class="font-raleway space-y-2 md:pl-4 md:pr-12 md:py-12 text-center pl-3 pr-8">
+                        <h4 class="text-xl  text-heading-color1 font-bold md:text-3xl">Couple 20</h4>
+                        <p class="text-sm font-medium md:text-xl description-color4">Coupon Code</p>
+                    </div>
+                </div>
             </div>
             <button class="btn text-green-color border-green-color bg-white ">See All Offers</button>
+        </section>
+        <!-- Paribahan section -->
+        <section
+            class="mb-24 text-center mx-auto border-t-2 border-green-color rounded-t-[88px] min-h-96 bg-paribahan-bg-color md:p-24 py-8 px-4">
+            <!-- section 1 -->
+            <div class="m-0 rounded-3xl">
+                <h3 class="font-raleway text-4xl font-bold text-heading-color1 mb-6">BD Travels</h3>
+                <p class="font-inter text-lg text-description-color6 max-w-3xl mx-auto mb-12">Yes, you can easily book
+                    bus tickets, check seat availability, and manage your trips directly within the app. </p>
+                <!-- card-->
+                <div class="bg-white m-1 md:m-0 rounded-3xl flex flex-col md:flex-row items-center justify-center mx-auto ">
+                    <!-- card left part  -->
+                    <div class="py-3 md:py-8 md:pl-8">
+                        <!-- card section 1 -->
+                        <div class="flex flex-col md:flex-row md:justify-between justify-center space-y-5 mb-6">
+                            <!--first part1 -->
+                            <div class="flex items-center justify-center">
+                                <div>
+                                    <img src="images/bus-logo.png" alt="bus">
+                                </div>
+                                <div>
+                                    <h4
+                                        class="font-raleway text-2xl md:text-3xl font-bold text-heading-color1 mb-2 m-0 ">
+                                        Orien Paribahan</h4>
+                                    <p class="font-inter text-sm md:text-lg ml-3">Coach-009-WEB ! AC_Business</p>
+                                </div>
+                            </div>
+                            <!--first part2 -->
+                            <div class="flex items-center justify-center gap-2 bg-quantity-bg-color p-5 md:px-4 rounded-xl mx-auto md:mx-0 w-4/5 md:w-auto">
+                                <img src="images/seat-green.png" alt="seat-quantity">
+                                <p class="font-inter text-lg font-medium text-green-color">40 Seats left</p>
+                            </div>
+
+                        </div>
+                        <!-- card section 2 -->
+                        <div class="bg-card-bg-color3 md:p-8 rounded-xl m-0">
+                            <div>
+                                <!-- row 1  -->
+                                <div class="flex items-center justify-between py-6 border-b-2 border-dashed">
+                                    <p class="font-raleway text-lg font-semibold text-description-color6">Route</p>
+                                    <p class="font-raleway text-lg font-semibold text-heading-color1">Dhaka-Sylhet</p>
+                                </div>
+                                <!-- row 2  -->
+                                <div class="flex items-center justify-between py-6 border-b-2 border-dashed mb-6">
+                                    <p class="font-raleway text-lg font-semibold text-description-color6">Departure Time
+                                    </p>
+                                    <p class="font-raleway text-lg font-semibold text-heading-color1">9:00 PM</p>
+                                </div>
+                                <!-- row 3 -->
+                                <div class="flex flex-row items-center md:justify-between gap-2 md:gap-6">
+                                    <p
+                                        class="px-5 py-4 bg-checkpoint-bg-color rounded-xl font-inter font-medium text-heading-color8">
+                                        Boarding Point - Laxmipur</p>
+                                    <p
+                                        class="px-5 py-4 bg-checkpoint-bg-color rounded-xl font-inter font-medium text-heading-color8">
+                                        Dropping Point - Bogura</p>
+                                    <p
+                                        class="px-5 py-4 bg-checkpoint-bg-color rounded-xl font-inter font-medium text-heading-color8">
+                                        Est. Time - 11 Hour</p>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card  middle part  -->
+                    <div class="p-0 md:w-28 hidden sm:block">
+                        <img src="images/info-devider.png" alt="" class="w-full h-full">
+                    </div>
+
+                    <!-- card right part -->
+                    <div class="py-8 pr-8 text-center flex flex-col items-center justify-center">
+                        <div class="mb-6">
+                            <img src="images/fare.png" alt="" class="">
+                        </div>
+                        <h4 class="font-raleway text-heading-color1 text-3xl font-bold mb-3">550 Taka</h4>
+                        <p class="text-heading-color6 text-2xl font-semibold font-raleway">Per Seat</p>
+                    </div>
+                </div>
+
+            </div>
+
         </section>
     </main>
     <footer></footer>
