@@ -38,6 +38,11 @@
                         'paribahan-bg-color': '#F7F8F8',
                         'quantity-bg-color': 'rgba(29, 209, 0, 0.15)',
                         'checkpoint-bg-color': 'rgba(3, 7, 18, 0.05)',
+                        'btn-bg-color2': 'rgba(3, 7, 18, 0.1)',
+                        'foot-des-color': 'rgba(255, 255, 255, 0.8)',
+                        'foot-des-color2': 'rgba(255, 255, 255, 0.7)',
+                        'border-color': 'rgba(255, 255, 255, 0.3)',
+
                     }
                 }
             }
@@ -108,7 +113,7 @@
             </div>
             <!-- card container -->
             <div
-                class="font-inter flex flex-col md:flex-row  justify-center gap-6 static md:relative md:bottom-16 md:px-20">
+                class="font-inter flex flex-col lg:flex-row  justify-center gap-6 static lg:relative lg:bottom-16 lg:px-20">
                 <!-- card 1  -->
                 <div
                     class="flex justify-around gap-4 items-center text-left bg-white rounded-3xl border-b-4 border-green-color p-8 w-full min-w-80">
@@ -148,7 +153,7 @@
         <section class="mt-12 mb-24 text-center mx-5">
             <h3 class="text-header-color1 font-raleway text-4xl font-bold text-center mb-12">Best offers for you</h3>
             <!-- card container -->
-            <div class="flex flex-col md:flex-row gap-6 justify-center  mb-16 ">
+            <div class="flex flex-col flex-wrap lg:flex-row gap-6 justify-center  mb-16 ">
                 <!-- card1 -->
                 <div class="flex bg-card1-bg-color items-center rounded-3xl">
                     <!-- part1 -->
@@ -192,17 +197,18 @@
         <section
             class="mb-24 text-center mx-auto border-t-2 border-green-color rounded-t-[88px] min-h-96 bg-paribahan-bg-color md:p-24 py-8 px-4">
             <!-- section 1 -->
-            <div class="m-0 rounded-3xl">
+            <div class="m-0 rounded-3xl mb-7">
                 <h3 class="font-raleway text-4xl font-bold text-heading-color1 mb-6">BD Travels</h3>
                 <p class="font-inter text-lg text-description-color6 max-w-3xl mx-auto mb-12">Yes, you can easily book
                     bus tickets, check seat availability, and manage your trips directly within the app. </p>
                 <!-- card-->
-                <div class="bg-white m-1 md:m-0 rounded-3xl flex flex-col md:flex-row items-center justify-center mx-auto ">
+                <div
+                    class="bg-white m-1 md:m-0 rounded-3xl flex flex-col lg:flex-row items-center justify-center mx-auto ">
                     <!-- card left part  -->
-                    <div class="py-3 md:py-8 md:pl-8">
+                    <div class="py-3 lg:py-8 lg:pl-8 mx-3">
                         <!-- card section 1 -->
                         <div class="flex flex-col md:flex-row md:justify-between justify-center space-y-5 mb-6">
-                            <!--first part1 -->
+                            <!--part1 -->
                             <div class="flex items-center justify-center">
                                 <div>
                                     <img src="images/bus-logo.png" alt="bus">
@@ -214,15 +220,16 @@
                                     <p class="font-inter text-sm md:text-lg ml-3">Coach-009-WEB ! AC_Business</p>
                                 </div>
                             </div>
-                            <!--first part2 -->
-                            <div class="flex items-center justify-center gap-2 bg-quantity-bg-color p-5 md:px-4 rounded-xl mx-auto md:mx-0 w-4/5 md:w-auto">
+                            <!--part2 -->
+                            <div
+                                class="flex items-center justify-center gap-2 bg-quantity-bg-color p-5 md:px-4 rounded-xl mx-auto md:mx-0 w-4/5 md:w-auto">
                                 <img src="images/seat-green.png" alt="seat-quantity">
                                 <p class="font-inter text-lg font-medium text-green-color">40 Seats left</p>
                             </div>
 
                         </div>
                         <!-- card section 2 -->
-                        <div class="bg-card-bg-color3 md:p-8 rounded-xl m-0">
+                        <div class="bg-card-bg-color3 p-8 rounded-xl m-0">
                             <div>
                                 <!-- row 1  -->
                                 <div class="flex items-center justify-between py-6 border-b-2 border-dashed">
@@ -236,29 +243,29 @@
                                     <p class="font-raleway text-lg font-semibold text-heading-color1">9:00 PM</p>
                                 </div>
                                 <!-- row 3 -->
-                                <div class="flex flex-row items-center md:justify-between gap-2 md:gap-6">
+                                <div
+                                    class="flex flex-col md:flex-row items-center md:justify-between  justify-center gap-6">
                                     <p
-                                        class="px-5 py-4 bg-checkpoint-bg-color rounded-xl font-inter font-medium text-heading-color8">
+                                        class="px-5 py-4 bg-checkpoint-bg-color rounded-xl font-inter font-medium text-heading-color8 max-w-60   w-full lg:w-1/4">
                                         Boarding Point - Laxmipur</p>
                                     <p
-                                        class="px-5 py-4 bg-checkpoint-bg-color rounded-xl font-inter font-medium text-heading-color8">
+                                        class="px-5 py-4  bg-checkpoint-bg-color rounded-xl font-inter font-medium text-heading-color8 max-w-60  w-full lg:w-1/4">
                                         Dropping Point - Bogura</p>
                                     <p
-                                        class="px-5 py-4 bg-checkpoint-bg-color rounded-xl font-inter font-medium text-heading-color8">
+                                        class="px-5 py-4  bg-checkpoint-bg-color rounded-xl font-inter font-medium text-heading-color8 max-w-60  w-full lg:w-1/3">
                                         Est. Time - 11 Hour</p>
-
-
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!-- card  middle part  -->
-                    <div class="p-0 md:w-28 hidden sm:block">
-                        <img src="images/info-devider.png" alt="" class="w-full h-full">
+                    <div class="p-0 md:w-28 hidden lg:block">
+                        <img src="images/info-devider13.png" alt="" class="w-full h-full">
                     </div>
 
                     <!-- card right part -->
-                    <div class="py-8 pr-8 text-center flex flex-col items-center justify-center">
+                    <div
+                        class="py-8 pr-8 text-center flex flex-row md:flex-col items-center justify-center gap-2 md:gap-0 mx-auto">
                         <div class="mb-6">
                             <img src="images/fare.png" alt="" class="">
                         </div>
@@ -268,10 +275,418 @@
                 </div>
 
             </div>
+            <!-- section 2 -->
+            <div class="rounded-3xl p-4 md:p-8 bg-white flex  flex-col lg:flex-row">
 
+                <!-- left part -->
+                <div class="lg:pr-8 lg:border-dashed lg:border-r-2">
+                    <h3 class="text-heading-color1 text-2xl font-semibold font-raleway pb-6 border-b-2 border-dashed">
+                        Select Your Seat</h3>
+                    <!-- card section1 container -->
+                    <div class="flex items-center justify-between p-4 border-b-2 border-dashed mb-6">
+                        <!-- part1 -->
+                        <div class="flex flex-row items-center gap-2">
+                            <div><img src="images/seat-gray.png" alt="available-seat"></div>
+                            <p class="font-inter text-lg font-medium text-description-color5">Available</p>
+                        </div>
+                        <!-- part2 -->
+                        <div class="flex flex-row items-center gap-2">
+                            <div><img src="images/seat-green-filled.png" alt="available-seat"></div>
+                            <p class="font-inter text-lg font-medium text-green-color">Selected</p>
+                        </div>
+                    </div>
+
+                    <!-- try with grid: -->
+                    <div class="grid grid-cols-[auto_auto_auto_5px_auto_auto]
+                    md:grid-cols-[auto_auto_auto_auto_auto_auto]
+                     leading-3 gap-3 md:gap-6 items-center mx-auto">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div class="bg-card-bg-color3 rounded-xl px-4 py-2 lg:py-3 lg:px-8  md:w-full md:h-full">
+                            <img src="images/steering-wheel.png" alt="steering-wheel" class="h-8 max-w-8 mx-auto">
+                        </div>
+                        <!-- for A -->
+                        <!-- item 1 -->
+                        <h4 class="font-inter text-lg font-medium text-description-color5 w-full">A</h4>
+                        <!-- item  -->
+                        <div class="w-full">
+                            <button
+                                class="font-inter text-lg font-medium text-description-color5 bg-card-bg-color3 rounded-xl px-4 py-2 sm:py-3 sm:px-8">A1</button>
+                        </div>
+                        <!-- item 3 -->
+                        <div>
+                            <button
+                                class="font-inter text-lg font-medium text-description-color5 bg-card-bg-color3 rounded-xl px-4 py-2 sm:py-3 sm:px-8">A2</button>
+                        </div>
+                        <!-- item 4 -->
+                        <div></div>
+
+                        <!-- tem 5 -->
+                        <div>
+                            <button
+                                class="font-inter text-lg font-medium text-description-color5 bg-card-bg-color3 rounded-xl px-4 py-2 sm:py-3 sm:px-8 w-full">A3</button>
+                        </div>
+                        <!-- item 6 -->
+                        <div>
+                            <button
+                                class="font-inter text-lg font-medium text-description-color5 bg-card-bg-color3 rounded-xl px-4 py-2 sm:py-3 sm:px-8 w-full">A4</button>
+                        </div>
+                        <!-- for B -->
+                        <!-- item 1 -->
+                        <h4 class="font-inter text-lg font-medium text-description-color5 w-5">B</h4>
+                        <!-- item  -->
+                        <div>
+                            <button
+                                class="font-inter text-lg font-medium text-description-color5 bg-card-bg-color3 rounded-xl px-4 py-2 sm:py-3 sm:px-8 w-full">B1</button>
+                        </div>
+                        <!-- item 3 -->
+                        <div>
+                            <button
+                                class="font-inter text-lg font-medium text-description-color5 bg-card-bg-color3 rounded-xl px-4 py-2 sm:py-3 sm:px-8 w-full">B2</button>
+                        </div>
+                        <!-- item 4 -->
+                        <div></div>
+
+                        <!-- tem 5 -->
+                        <div>
+                            <button
+                                class="font-inter text-lg font-medium text-description-color5 bg-card-bg-color3 rounded-xl px-4 py-2 sm:py-3 sm:px-8 w-full">B3</button>
+                        </div>
+                        <!-- item 6 -->
+                        <div>
+                            <button
+                                class="font-inter text-lg font-medium text-description-color5 bg-card-bg-color3 rounded-xl px-4 py-2 sm:py-3 sm:px-8 w-full">B4</button>
+                        </div>
+                        <!-- for C -->
+                        <!-- item 1 -->
+                        <h4 class="font-inter text-lg font-medium text-description-color5 w-5">C</h4>
+                        <!-- item  -->
+                        <div>
+                            <button
+                                class="font-inter text-lg font-medium text-description-color5 bg-card-bg-color3 rounded-xl px-4 py-2 sm:py-3 sm:px-8 w-full">C1</button>
+                        </div>
+                        <!-- item 3 -->
+                        <div>
+                            <button
+                                class="font-inter text-lg font-medium text-description-color5 bg-card-bg-color3 rounded-xl px-4 py-2 sm:py-3 sm:px-8 w-full">C2</button>
+                        </div>
+                        <!-- item 4 -->
+                        <div></div>
+
+                        <!-- tem 5 -->
+                        <div>
+                            <button
+                                class="font-inter text-lg font-medium text-description-color5 bg-card-bg-color3 rounded-xl px-4 py-2 sm:py-3 sm:px-8 w-full">C3</button>
+                        </div>
+                        <!-- item 6 -->
+                        <div>
+                            <button
+                                class="font-inter text-lg font-medium text-description-color5 bg-card-bg-color3 rounded-xl px-4 py-2 sm:py-3 sm:px-8 w-full">C4</button>
+                        </div>
+                        <!-- for D -->
+                        <!-- item 1 -->
+                        <h4 class="font-inter text-lg font-medium text-description-color5 w-5">D</h4>
+                        <!-- item  -->
+                        <div>
+                            <button
+                                class="font-inter text-lg font-medium text-description-color5 bg-card-bg-color3 rounded-xl px-4 py-2 sm:py-3 sm:px-8 w-full">D1</button>
+                        </div>
+                        <!-- item 3 -->
+                        <div>
+                            <button
+                                class="font-inter text-lg font-medium text-description-color5 bg-card-bg-color3 rounded-xl px-4 py-2 sm:py-3 sm:px-8 w-full">D2</button>
+                        </div>
+                        <!-- item 4 -->
+                        <div></div>
+
+                        <!-- tem 5 -->
+                        <div>
+                            <button
+                                class="font-inter text-lg font-medium text-description-color5 bg-card-bg-color3 rounded-xl px-4 py-2 sm:py-3 sm:px-8 w-full">D3</button>
+                        </div>
+                        <!-- item 6 -->
+                        <div>
+                            <button
+                                class="font-inter text-lg font-medium text-description-color5 bg-card-bg-color3 rounded-xl px-4 py-2 sm:py-3 sm:px-8 w-full">D4</button>
+                        </div>
+                        <!-- for E -->
+                        <!-- item 1 -->
+                        <h4 class="font-inter text-lg font-medium text-description-color5 w-5">E</h4>
+                        <!-- item  -->
+                        <div>
+                            <button
+                                class="font-inter text-lg font-medium text-description-color5 bg-card-bg-color3 rounded-xl px-4 py-2 sm:py-3 sm:px-8 w-full">E1</button>
+                        </div>
+                        <!-- item 3 -->
+                        <div>
+                            <button
+                                class="font-inter text-lg font-medium text-description-color5 bg-card-bg-color3 rounded-xl px-4 py-2 sm:py-3 sm:px-8 w-full">E2</button>
+                        </div>
+                        <!-- item 4 -->
+                        <div></div>
+
+                        <!-- tem 5 -->
+                        <div>
+                            <button
+                                class="font-inter text-lg font-medium text-description-color5 bg-card-bg-color3 rounded-xl px-4 py-2 sm:py-3 sm:px-8 w-full">E3</button>
+                        </div>
+                        <!-- item 6 -->
+                        <div>
+                            <button
+                                class="font-inter text-lg font-medium text-description-color5 bg-card-bg-color3 rounded-xl px-4 py-2 sm:py-3 sm:px-8 w-full">E4</button>
+                        </div>
+                        <!-- for F -->
+                        <!-- item 1 -->
+                        <h4 class="font-inter text-lg font-medium text-description-color5 w-5">F</h4>
+                        <!-- item  -->
+                        <div>
+                            <button
+                                class="font-inter text-lg font-medium text-description-color5 bg-card-bg-color3 rounded-xl px-4 py-2 sm:py-3 sm:px-8 w-full">F1</button>
+                        </div>
+                        <!-- item 3 -->
+                        <div>
+                            <button
+                                class="font-inter text-lg font-medium text-description-color5 bg-card-bg-color3 rounded-xl px-4 py-2 sm:py-3 sm:px-8 w-full">F2</button>
+                        </div>
+                        <!-- item 4 -->
+                        <div></div>
+
+                        <!-- tem 5 -->
+                        <div>
+                            <button
+                                class="font-inter text-lg font-medium text-description-color5 bg-card-bg-color3 rounded-xl px-4 py-2 sm:py-3 sm:px-8 w-full">F3</button>
+                        </div>
+                        <!-- item 6 -->
+                        <div>
+                            <button
+                                class="font-inter text-lg font-medium text-description-color5 bg-card-bg-color3 rounded-xl px-4 py-2 sm:py-3 sm:px-8 w-full">F4</button>
+                        </div>
+                        <!-- for B -->
+                        <!-- item 1 -->
+                        <h4 class="font-inter text-lg font-medium text-description-color5 w-5">G</h4>
+                        <!-- item  -->
+                        <div>
+                            <button
+                                class="font-inter text-lg font-medium text-description-color5 bg-card-bg-color3 rounded-xl px-4 py-2 sm:py-3 sm:px-8 w-full">G1</button>
+                        </div>
+                        <!-- item 3 -->
+                        <div>
+                            <button
+                                class="font-inter text-lg font-medium text-description-color5 bg-card-bg-color3 rounded-xl px-4 py-2 sm:py-3 sm:px-8 w-full">G2</button>
+                        </div>
+                        <!-- item 4 -->
+                        <div></div>
+
+                        <!-- tem 5 -->
+                        <div>
+                            <button
+                                class="font-inter text-lg font-medium text-description-color5 bg-card-bg-color3 rounded-xl px-4 py-2 sm:py-3 sm:px-8 w-full">G3</button>
+                        </div>
+                        <!-- item 6 -->
+                        <div>
+                            <button
+                                class="font-inter text-lg font-medium text-description-color5 bg-card-bg-color3 rounded-xl px-4 py-2 sm:py-3 sm:px-8 w-full">G4</button>
+                        </div>
+                        <!-- for H -->
+                        <!-- item 1 -->
+                        <h4 class="font-inter text-lg font-medium text-description-color5 w-5">H</h4>
+                        <!-- item  -->
+                        <div>
+                            <button
+                                class="font-inter text-lg font-medium text-description-color5 bg-card-bg-color3 rounded-xl px-4 py-2 sm:py-3 sm:px-8 w-full">H1</button>
+                        </div>
+                        <!-- item 3 -->
+                        <div>
+                            <button
+                                class="font-inter text-lg font-medium text-description-color5 bg-card-bg-color3 rounded-xl px-4 py-2 sm:py-3 sm:px-8 w-full">H2</button>
+                        </div>
+                        <!-- item 4 -->
+                        <div></div>
+
+                        <!-- tem 5 -->
+                        <div>
+                            <button
+                                class="font-inter text-lg font-medium text-description-color5 bg-card-bg-color3 rounded-xl px-4 py-2 sm:py-3 sm:px-8 w-full">H3</button>
+                        </div>
+                        <!-- item 6 -->
+                        <div>
+                            <button
+                                class="font-inter text-lg font-medium text-description-color5 bg-card-bg-color3 rounded-xl px-4 py-2 sm:py-3 sm:px-8 w-full">H4</button>
+                        </div>
+                        <!-- for I -->
+                        <!-- item 1 -->
+                        <h4 class="font-inter text-lg font-medium text-description-color5 w-5">I</h4>
+                        <!-- item  -->
+                        <div>
+                            <button
+                                class="font-inter text-lg font-medium text-description-color5 bg-card-bg-color3 rounded-xl px-4 py-2 sm:py-3 sm:px-8 w-full">I1</button>
+                        </div>
+                        <!-- item 3 -->
+                        <div>
+                            <button
+                                class="font-inter text-lg font-medium text-description-color5 bg-card-bg-color3 rounded-xl px-4 py-2 sm:py-3 sm:px-8 w-full">I2</button>
+                        </div>
+                        <!-- item 4 -->
+                        <div></div>
+
+                        <!-- tem 5 -->
+                        <div>
+                            <button
+                                class="font-inter text-lg font-medium text-description-color5 bg-card-bg-color3 rounded-xl px-4 py-2 sm:py-3 sm:px-8 w-full">I3</button>
+                        </div>
+                        <!-- item 6 -->
+                        <div>
+                            <button
+                                class="font-inter text-lg font-medium text-description-color5 bg-card-bg-color3 rounded-xl px-4 py-2 sm:py-3 sm:px-8 w-full">I4</button>
+                        </div>
+                        <!-- for J -->
+                        <!-- item 1 -->
+                        <h4 class="font-inter text-lg font-medium text-description-color5 w-5">J</h4>
+                        <!-- item  -->
+                        <div>
+                            <button
+                                class="font-inter text-lg font-medium text-description-color5 bg-card-bg-color3 rounded-xl px-4 py-2 sm:py-3 sm:px-8 w-full">J1</button>
+                        </div>
+                        <!-- item 3 -->
+                        <div>
+                            <button
+                                class="font-inter text-lg font-medium text-description-color5 bg-card-bg-color3 rounded-xl px-4 py-2 sm:py-3 sm:px-8 w-full">J2</button>
+                        </div>
+                        <!-- item 4 -->
+                        <div></div>
+
+                        <!-- tem 5 -->
+                        <div>
+                            <button
+                                class="font-inter text-lg font-medium text-description-color5 bg-card-bg-color3 rounded-xl px-4 py-2 sm:py-3 sm:px-8 w-full">J3</button>
+                        </div>
+                        <!-- item 6 -->
+                        <div>
+                            <button
+                                class="font-inter text-lg font-medium text-description-color5 bg-card-bg-color3 rounded-xl px-4 py-2 sm:py-3 sm:px-8 w-full">J4</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- right part -->
+                <div class="mt-10 md:mt-28 lg:mt-0 lg:pl-8">
+                    <h3 class="text-heading-color1 text-2xl font-semibold font-raleway pb-6 border-b-2 border-dashed">
+                        Select Your Seat</h3>
+                    <!-- calculation box -->
+                    <div class="p-8 bg-seat-bg-color font-inter mb-6 mt-6 rounded-xl">
+                        <!-- row 1 -->
+                        <div class="flex items-center justify-between pb-4 border-b-2 border-dashed">
+                            <p class="text-lg font-medium text-heading-color1">Seat<sup><span
+                                        class="bg-green-color text-white font-bold rounded-xl px-3">2</span></sup></p>
+                            <p class="text-lg font-medium text-heading-color1">Class</p>
+                            <p class="text-lg font-medium text-heading-color1">Price</p>
+                        </div>
+                        <!-- row 2 -->
+                        <div class="flex items-center justify-between py-4 text-heading-color6">
+                            <p class="text-lg font-medium ">C2</p>
+                            <p class="text-lg font-medium ">Economy</p>
+                            <p class="text-lg font-medium ">550</p>
+                        </div>
+                        <!-- row 3 -->
+                        <div class="flex justify-between items-center pb-4 text-heading-color6 border-b-2">
+                            <p class="text-lg font-medium ">C2</p>
+                            <p class="text-lg font-medium ">Economy</p>
+                            <p class="text-lg font-medium ">550</p>
+                        </div>
+
+                        <!-- total summary-->
+                        <div class="flex justify-between items-center my-4">
+                            <p class="text-lg font-medium text-heading-color1">Total Price</p>
+                            <p class="text-lg font-medium text-heading-color1">BDT <span>1100</span></p>
+                        </div>
+                        <!-- Coupon input  -->
+                        <div class="flex justify-end items-center">
+                            <input type="text" class="text-xs rounded-xl p-5 w-full relative"
+                                placeholder="Have any coupon?">
+                            <button
+                                class="btn bg-green-color text-white normal-case absolute right-20 md:right-[165px]">Apply</button>
+                        </div>
+                        <!-- grand total-->
+                        <div class="flex justify-between items-center my-4">
+                            <p class="text-lg font-medium text-heading-color1">Grand Total</p>
+                            <p class="text-lg font-medium text-heading-color1">BDT <span>1100</span></p>
+                        </div>
+
+                    </div>
+                    <div class="font-inter text-left">
+                        <!-- name -->
+                        <label for="passenger-name" class="text-lg font-semibold text-heading-color1  ">Passenger
+                            Name*</label> <br>
+                        <input type="name"
+                            class="text-description-color4 p-6 rounded-xl w-full border-2 mt-4 mb-6 focus-visible:outline-none"
+                            id="passenger-name" placeholder="Enter your name " required>
+
+                        <!-- number  -->
+                        <label for="passenger-number" class="text-lg font-semibold text-heading-color1  ">Phone
+                            Number*</label> <br>
+                        <input type="text"
+                            class="text-description-color4 p-6 rounded-xl w-full border-2 mt-4 mb-6 focus-visible:outline-none"
+                            id="passenger-number" placeholder="Enter your number " required>
+                        <!-- email -->
+                        <label for="passenger-email" class="text-lg font-semibold text-heading-color1  ">Email
+                            ID</label> <br>
+                        <input type="email"
+                            class="text-description-color4 p-6 rounded-xl w-full border-2 mt-4 mb-6 focus-visible:outline-none"
+                            id="passenger-email" placeholder="Enter your email ">
+
+                        <button
+                            class="btn w-full text-white bg-green-color rounded-2xl font-raleway font-extrabold text-xl normal-case">Next</button>
+                    </div>
+                    <div class="font-inter text-base font-medium text-heading-color6 mt-6 flex flex-col md:flex-row justify-around items-center underline">
+                        <a href="#">Terms and Conditions</a>
+                        <a href="#">Cancellation Policy</a>
+                    </div>
+                </div>
+
+            </div>
         </section>
     </main>
-    <footer></footer>
+    <footer>
+        <div class="bg-heading-color1 pt-11 pb-4 px-4 md:px-24 md:pt-24 md:pb-0 ">
+            <!-- section 1 -->
+            <div class="flex flex-col md:flex-row justify-center md:justify-between items-center mb-20 ">
+                <!-- left part -->
+                <div class="text-center md:text-left">
+                    <h3 class="text-white font-raleway font-extrabold text-2xl md:text-4xl mb-4">BD Travels</h3>
+                    <p class="font-inter text-sm  md:text-lg text-foot-des-color max-w-52 mx-auto md:mx-0 md:max-w-96 font-normal">BD Travels is a digital platform to make your daily commuting better.</p>
+                </div>
+
+                <!-- right part -->
+                 <div class="mt-6 md:mt-0">
+                    <h3 class="font-raleway font-bold text-xl text-white mb-5">Download our app</h3>
+                    <div class="flex gap-4 p-3 border-2 max-w-48 border-white rounded-xl">
+                        <img src="images/playstore.png" alt="">
+                        <div class="text-white">
+                            <p class="text-sm font-medium">GET IT ON</p>
+                            <h1 class="text-xl font-bold">Google Play</h1>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+            <!-- section2 -->
+             <div class="flex flex-col-reverse md:flex-row justify-center md:justify-between pt-8 border-t-2 border-dashed border-border-color text-center">
+                <!-- left part -->
+                 <div class="text-foot-des-color2 text-font-inter">
+                    <p>@all rights reserved, BD Travels services limited.2026</p>
+                 </div>
+                 <!-- right part -->
+                  <div class="flex flex-col md:flex-row gap-8 text-white font-inter font-medium text-base mb-20">
+                    <p><a href="#">Terms & condition</a></p>
+                    <p><a href="#">Return & refund policy</a></p>
+                    <p><a href="#">Privacy policy</a></p>
+
+                  </div>
+             </div>
+
+        </div>
+    </footer>
 </body>
 
 </html>
