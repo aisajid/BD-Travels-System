@@ -52,8 +52,6 @@ function setGrandTotal() {
     const btn = document.getElementById('btn-coupon-apply');
     priceElement.innerText = total;
     const couponContainer = document.getElementById('Coupon-input-container-element');
-    // const div = document.createElement('div');
-    // div.classList.add('flex', 'justify-between', 'items-center', 'my-4', 'text-lg', 'font-medium', 'text-heading-color1')
     const p1 = document.createElement('p');
     p1.innerText = 'Discount Price';
     const p2 = document.createElement('p');
@@ -67,8 +65,9 @@ function setGrandTotal() {
             const calculateValue = parseInt(total * 15) / 100;
             p2.innerText = calculateValue;
             priceElement.innerText = total - calculateValue;
-            couponContainer.classList.add('text-lg', 'font-medium');
+            couponContainer.classList.add('text-lg', 'font-medium', 'text-heading-color1');
             couponContainer.classList.remove('bg-white');
+            couponContainer.classList.remove('p-2');
 
             couponContainer.removeChild(input);
             couponContainer.removeChild(btn);
@@ -81,8 +80,10 @@ function setGrandTotal() {
             const calculateValue2 = (total * 20)/100;
             p2.innerText = calculateValue2;
             priceElement.innerText = total - calculateValue2;
-            couponContainer.classList.add('text-lg', 'font-medium');
+            couponContainer.classList.add('text-lg', 'font-medium', 'text-heading-color1');
             couponContainer.classList.remove('bg-white');
+            couponContainer.classList.remove('p-2');
+            
 
             couponContainer.removeChild(input);
             couponContainer.removeChild(btn);

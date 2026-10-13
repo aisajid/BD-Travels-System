@@ -39,11 +39,6 @@ for (const seat of seats) {
                 const seatHave = 40 - seatSelected;
                 seatLeft.innerText = seatHave;
                 showCostSummary(seat);
-
-
-
-                // 
-
             }
         }
         const selectedSeatQuantityElement = document.getElementById('seat-selected');
@@ -52,8 +47,9 @@ for (const seat of seats) {
         removeDisableCouponApplyBtn(seatSelected);
         
     })
-    setGrandTotal(seatSelected);
 }
+
+ setGrandTotal(seatSelected);
 
 
 
