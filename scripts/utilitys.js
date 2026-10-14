@@ -77,13 +77,13 @@ function setGrandTotal() {
 
         }
         else if (coupon === 'Couple 20') {
-            const calculateValue2 = (total * 20)/100;
+            const calculateValue2 = (total * 20) / 100;
             p2.innerText = calculateValue2;
             priceElement.innerText = total - calculateValue2;
             couponContainer.classList.add('text-lg', 'font-medium', 'text-heading-color1');
             couponContainer.classList.remove('bg-white');
             couponContainer.classList.remove('p-2');
-            
+
 
             couponContainer.removeChild(input);
             couponContainer.removeChild(btn);
@@ -97,4 +97,18 @@ function setGrandTotal() {
 
     })
 
+}
+
+
+
+function nexBtnHandler(seatSelected){
+    const phoneNumInput = document.getElementById('phone-number-input');
+const nextBtn = document.getElementById('next-btn');
+
+if((seatSelected > 0) && (phoneNumInput.value.length === 11)){
+     nextBtn.removeAttribute('disabled');
+}
+else{
+    nextBtn.setAttribute('disabled', true);
+}
 }

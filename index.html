@@ -198,6 +198,8 @@
         <!-- Paribahan section -->
         <section id="paribahan-section"
             class="pb-24 text-center mx-auto border-t-2 border-green-color rounded-t-[88px] min-h-96 bg-paribahan-bg-color md:p-24 py-8 px-4">
+
+
             <!-- section 1 -->
             <div class="m-0 rounded-3xl mb-7">
                 <h3 class="font-raleway text-4xl font-bold text-heading-color1 mb-6">BD Travels</h3>
@@ -226,8 +228,8 @@
                             <div
                                 class="flex items-center justify-center gap-2 bg-quantity-bg-color p-5 md:px-4 rounded-xl mx-auto md:mx-0 w-4/5 md:w-auto">
                                 <img src="images/seat-green.png" alt="seat-quantity">
-                                <p class="font-inter text-lg font-medium text-green-color"><span
-                                        id="seats-left">40 </span>Seats left</p>
+                                <p class="font-inter text-lg font-medium text-green-color"><span id="seats-left">40
+                                    </span>Seats left</p>
                             </div>
 
                         </div>
@@ -278,6 +280,7 @@
                 </div>
 
             </div>
+
             <!-- section 2 -->
             <div class="rounded-3xl p-4 md:p-8 bg-white flex  flex-col lg:flex-row lg:justify-center">
 
@@ -594,18 +597,23 @@
 
                         <!-- total summary-->
                         <div class="flex justify-between items-center my-4">
-                            <p  class="text-lg font-medium text-heading-color1">Total Price</p>
-                            <p class="text-lg font-medium text-heading-color1">BDT <span id="total-price-element">0</span></p>
+                            <p class="text-lg font-medium text-heading-color1">Total Price</p>
+                            <p class="text-lg font-medium text-heading-color1">BDT <span
+                                    id="total-price-element">0</span></p>
                         </div>
                         <!-- Coupon input  -->
-                        <div id="Coupon-input-container-element" class="flex justify-between items-center rounded-xl p-2 w-full bg-white">
-                            <input type="text" id="coupon-input-element" class="text-xs p-3 w-full outline-none" placeholder="Have any coupon?">
-                            <button id="btn-coupon-apply" class="btn bg-green-color text-white normal-case" disabled>Apply</button>
+                        <div id="Coupon-input-container-element"
+                            class="flex justify-between items-center rounded-xl p-2 w-full bg-white">
+                            <input type="text" id="coupon-input-element" class="text-xs p-3 w-full outline-none"
+                                placeholder="Have any coupon?">
+                            <button id="btn-coupon-apply" class="btn bg-green-color text-white normal-case"
+                                disabled>Apply</button>
                         </div>
                         <!-- grand total-->
                         <div class="flex justify-between items-center my-4">
                             <p class="text-lg font-medium text-heading-color1">Grand Total</p>
-                            <p class="text-lg font-medium text-heading-color1">BDT <span id="grand-total-element">0</span></p>
+                            <p class="text-lg font-medium text-heading-color1">BDT <span
+                                    id="grand-total-element">0</span></p>
                         </div>
 
                     </div>
@@ -620,7 +628,7 @@
                         <!-- number  -->
                         <label for="passenger-number" class="text-lg font-semibold text-heading-color1  ">Phone
                             Number*</label> <br>
-                        <input type="text"
+                        <input id="phone-number-input" type="number"
                             class="text-description-color4 p-6 rounded-xl w-full border-2 mt-4 mb-6 focus-visible:outline-none"
                             id="passenger-number" placeholder="Enter your number " required>
                         <!-- email -->
@@ -630,9 +638,37 @@
                             class="text-description-color4 p-6 rounded-xl w-full border-2 mt-4 mb-6 focus-visible:outline-none"
                             id="passenger-email" placeholder="Enter your email ">
 
-                        <button
-                            class="btn w-full text-white bg-green-color rounded-2xl font-raleway font-extrabold text-xl normal-case" disabled>Next</button>
+                        <button id="next-btn" onclick="my_modal_1.showModal()"
+                            class="btn w-full text-white bg-green-color rounded-2xl font-raleway font-extrabold text-xl normal-case"
+                            disabled>Next</button>
                     </div>
+                    <!-- dialog -->
+                    <dialog id="my_modal_1" class="modal">
+                        <div
+                            class="modal-box flex flex-col font-roboto justify-center text-center items-center bg-white rounded-2xl">
+
+                            <div class="w-20 lg:w-4/5">
+                                <img src="images/success.png" alt="success-img" class="lg:w-24  mx-auto">
+                            </div>
+                            <h3 class="mt-8 text-frame-text text-xl font-bold">SUCCESS</h3>
+                            <div class="">
+                                <h4 class="text-frame-text2 text-xl font-medium mt-8">Thank you for Booking Our Bus
+                                    Seats.
+                                    <br> We are working hard to find the best service and deals for you.
+                                </h4>
+                                <p class="text-xl font-light text-frame-text2 mt-1">Shortly you will find a confirmation
+                                    in your email.</p>
+                            </div>
+                            <div class="modal-action">
+                                <form method="dialog">
+                                    <!-- if there is a button in form, it will close the modal -->
+                                    <button
+                                        class="btn block px-20 rounded-[32px] bg-frame-text text-white">Continue</button>
+
+                                </form>
+                            </div>
+                        </div>
+                    </dialog>
                     <div
                         class="font-inter text-base font-medium text-heading-color6 mt-6 flex flex-col md:flex-row justify-around items-center underline">
                         <a href="#">Terms and Conditions</a>
@@ -641,6 +677,7 @@
                 </div>
 
             </div>
+
         </section>
     </main>
     <footer>

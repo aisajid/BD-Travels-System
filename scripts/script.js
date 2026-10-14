@@ -1,3 +1,4 @@
+
 // buy ticket scrolling:
 const btnBuyTicket = document.getElementById('btn-buy-ticket');
 btnBuyTicket.addEventListener('click', function () {
@@ -10,6 +11,7 @@ btnBuyTicket.addEventListener('click', function () {
 let seatSelected = 0;
 
 
+
 const seats = document.querySelectorAll('.seat');
 for (const seat of seats) {
     seat.addEventListener('click', function () {
@@ -20,9 +22,14 @@ for (const seat of seats) {
             seat.classList.add('text-description-color5');
             seatSelected--;
             removePreviousCostSummary(seat);
+        removeDisableCouponApplyBtn(seatSelected);
+
+
         }
         else {
             if (seatSelected === 4) {
+        removeDisableCouponApplyBtn(seatSelected);
+
                 return alert("You can't select more than 4 seats.");
             }
             else {
@@ -39,17 +46,30 @@ for (const seat of seats) {
                 const seatHave = 40 - seatSelected;
                 seatLeft.innerText = seatHave;
                 showCostSummary(seat);
+        removeDisableCouponApplyBtn(seatSelected);
+                
+
             }
+
         }
         const selectedSeatQuantityElement = document.getElementById('seat-selected');
         selectedSeatQuantityElement.innerText = seatSelected;
         setTotalPrice(seatSelected);
-        removeDisableCouponApplyBtn(seatSelected);
-        
+        nexBtnHandler(seatSelected)
+
+
     })
 }
 
- setGrandTotal(seatSelected);
+setGrandTotal(seatSelected);
+
+
+// next btn:
+const phoneNumInput = document.getElementById('phone-number-input');
+
+phoneNumInput.addEventListener('keyup', function(){
+   nexBtnHandler(seatSelected);
+})
 
 
 
@@ -60,12 +80,5 @@ for (const seat of seats) {
 
 
 
-
-
-
-
-
-
-// seat quantity:
 
 
